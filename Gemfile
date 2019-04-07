@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem "ember-cli-rails"
+gem 'jsonapi-resources'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.8'
