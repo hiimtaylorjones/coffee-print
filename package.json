@@ -1,5 +1,4 @@
 {
-  "name": "coffee-print",
-  "private": true,
-  "dependencies": {}
+  
+  "cacheDirectories": ["frontend/node_modules","node_modules"]
 }
