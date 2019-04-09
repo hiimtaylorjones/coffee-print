@@ -1,4 +1,0 @@
-class SupplyChainsController < ApplicationController
-
-
-end
