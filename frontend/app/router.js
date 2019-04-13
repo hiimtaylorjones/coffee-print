@@ -7,7 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('supply-chains');
+  this.route('supply-chains', function() {
+    this.route('show', { path: '/:chain_id' });
+    this.route('index', { path: '/' });
+  });
 });
 
 export default Router;
