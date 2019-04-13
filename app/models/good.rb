@@ -1,4 +1,4 @@
 class Good < ApplicationRecord
   belongs_to :supply_chain
-  belongs_to :providfer
+  belongs_to :provider
 end
