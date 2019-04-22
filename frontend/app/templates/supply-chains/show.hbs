@@ -1,9 +1,15 @@
 <h2>{{model.name}}</h2>
 
+<h3>Rating: 5.0 / 10</h3>
+
 <h3>Associated Goods</h3>
 
 {{#each model.goods as |good|}}
-  <h4>{{good.name}}</h4>
-  <h4>{{good.origin}}</h4>
-  <h4>{{good.purpose}}</h4>
+  <div class="good-component">
+    <div class="component-content">
+      <h3 class="title">{{good.name}}</h3>
+      <p>Good originated from {{good.orgin}}</p>
+      <p>Used for {{good.purpose}}</p>
+    </div>
+  </div>
 {{/each}}

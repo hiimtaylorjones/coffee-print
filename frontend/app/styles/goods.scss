@@ -1,0 +1,15 @@
+.good-component {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .component-content {
+        padding: 10px;
+    }
+
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 40%;
+    display: inline-flex;
+}

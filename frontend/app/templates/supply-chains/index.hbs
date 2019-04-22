@@ -1,8 +1,12 @@
 {{outlet}}
 
-<h2>Here's a list of supply chains</h2>
+<h2>Available Supply Chains</h2>
 
 {{#each model as |chain|}}
-  <h3>{{chain.name}}</h3>
-  <p>{{#link-to "supply-chains.show" chain.id}}Show More{{/link-to}}</p>
+  <div class="supply-chain-component">
+    <div class="component-content">
+      <h3>{{chain.name}}</h3>
+      <p>{{#link-to "supply-chains.show" chain.id}}Show More{{/link-to}}</p>
+    </div>
+  </div>
 {{/each}}

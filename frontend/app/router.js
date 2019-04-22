@@ -7,6 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home', { path: '/' });
   this.route('supply-chains', function() {
     this.route('show', { path: '/:chain_id' });
     this.route('index', { path: '/' });
