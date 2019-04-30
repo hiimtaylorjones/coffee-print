@@ -12,6 +12,15 @@ Router.map(function() {
     this.route('show', { path: '/:chain_id' });
     this.route('index', { path: '/' });
   });
+  this.route('training', function() {
+    this.route('index', { path: '/' });
+  });
+  this.route('coffee', function() {
+    this.route('index', { path: '/' });
+  });
+  this.route('print', function() {
+    this.route('index', { path: '/' });
+  });
 });
 
 export default Router;
