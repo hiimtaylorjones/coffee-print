@@ -1,7 +1,16 @@
-.coffee-descriptor {
+.show-coffee-section {
     margin: 10% 15%;
-    .coffee-purpose {
-        margin-left: 5%;
-        font-style: italic;
+
+    .coffee-picture {
+        max-width: 100%;
+        max-height: 40%;
+    }
+
+    .coffee-descriptor {
+        .coffee-purpose {
+            margin-left: 5%;
+            font-style: italic;
+        }
     }
 }
+    

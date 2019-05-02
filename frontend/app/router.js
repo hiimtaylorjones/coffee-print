@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('coffee', function() {
     this.route('index', { path: '/' });
     this.route('show', { path: '/:coffee_id'});
+    this.route('edit', { path: '/:coffee_id/edit' });
   });
   this.route('print', function() {
     this.route('index', { path: '/' });

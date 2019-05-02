@@ -13,6 +13,15 @@ p, a {
     }
 }
 
+.divider {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.application-outlet-content {
+    margin: 10% 15%;
+}
+
 @import 'coffee';
 @import 'navbar';
 @import 'goods';
