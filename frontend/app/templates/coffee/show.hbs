@@ -1,5 +1,10 @@
 {{outlet}}
 
-<p>{{model.name}}</p>
-<p>{{model.origin}}</p>
-<p>{{model.purpose}}</p>
+<div class="coffee-descriptor">
+    <h2 class="coffee-name">{{model.name}}</h2>
+
+    <p>This coffee originated from <b>{{model.origin}}</b></p>
+
+    <p>Our suppliers and roasters agree on the following ideas around this coffee:</p>
+    <p class="coffee-purpose">{{model.purpose}}</p>
+</div>

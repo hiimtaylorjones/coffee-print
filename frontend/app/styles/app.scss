@@ -7,8 +7,13 @@ p, a {
     font-size: 1.20em;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.5px;
+
+    b {
+        font-size: 1.21em;
+    }
 }
 
+@import 'coffee';
 @import 'navbar';
 @import 'goods';
 @import 'supply_chains';
