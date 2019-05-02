@@ -1,1 +1,14 @@
 {{outlet}}
+
+{{outlet}}
+
+<h2>Print</h2>
+
+{{#each model as |print|}}
+  <div class="supply-chain-component">
+    <div class="component-content">
+      <h3>{{print.name}}</h3>
+      <h4>{{print.purpose}}</h4>
+    </div>
+  </div>
+{{/each}}

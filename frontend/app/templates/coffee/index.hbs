@@ -1,1 +1,12 @@
 {{outlet}}
+
+<h2>Coffee</h2>
+
+{{#each model as |coffee|}}
+  <div class="supply-chain-component">
+    <div class="component-content">
+      <h3>{{coffee.name}}</h3>
+      <h4>{{coffee.origin}}</h4>
+    </div>
+  </div>
+{{/each}}
