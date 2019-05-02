@@ -17,6 +17,7 @@ Router.map(function() {
   });
   this.route('coffee', function() {
     this.route('index', { path: '/' });
+    this.route('show', { path: '/:coffee_id'});
   });
   this.route('print', function() {
     this.route('index', { path: '/' });
