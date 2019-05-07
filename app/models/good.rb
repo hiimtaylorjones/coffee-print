@@ -10,6 +10,7 @@ class Good < ApplicationRecord
 
 
   def most_recent_rating_value
+    return nil if self.ratings.blank?
     self.ratings.last.rating_value
   end
 end
