@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_06_200734) do
+ActiveRecord::Schema.define(version: 2019_05_07_230227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2019_05_06_200734) do
   end
 
   create_table "ratings", force: :cascade do |t|
-    t.integer "rating_value"
+    t.decimal "rating_value", precision: 10, scale: 2
     t.text "review_notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
