@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 2019_05_07_230227) do
   end
 
   create_table "ratings", force: :cascade do |t|
-    t.decimal "rating_value", precision: 10, scale: 2
+    t.decimal "rating_value", precision: 15, scale: 2
     t.text "review_notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
