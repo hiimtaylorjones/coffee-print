@@ -21,7 +21,11 @@
 
         <p>Something something something good and real and nice and ethical</p>
 
-        <h3>It has a total rating of: {{model.mostRecentRatingValue}}</h3>
+        {{#if (gt model.mostRecentRatingValue 0)}}
+            <h3>It has a total rating of: {{model.mostRecentRatingValue}}</h3>
+        {{else}}
+            <h3>This product currently does not have a rating.</h3>
+        {{/if}}
 
         <div class="whats-right">
             <h4>There are a few things we did really well with sourcing this coffee</h4>
