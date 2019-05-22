@@ -5,4 +5,17 @@ class Api::V1::GoodResource < JSONAPI::Resource
   has_many :ratings, as: :subject
 
   filter :category
+
+
+  def most_recent_rating_value
+    @model.most_recent_rating_value
+  end
+
+  def self.updatable_fields(context)
+    super - [:most_recent_rating_value]
+  end
+
+  def self.creatable_fields(context)
+    super - [:most_recent_rating_value]
+  end
 end
