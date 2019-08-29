@@ -4,30 +4,23 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.2'
-# Use postgresql as the database for Active Record
+gem 'rails', '6.0.0'
+
+# Backend Resources
 gem 'pg', '>= 0.18', '< 2.0'
-# Use Puma as the app server
-gem 'puma', '~> 3.11'
-
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
-
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
-gem 'uglifier'
-# Reduces boot times through caching; required in config/boot.rb
+gem 'puma', '~> 4.1.0'
 gem 'bootsnap', '>= 1.1.0', require: false
-
-
-gem "ember-cli-rails" # Ember frontend
 gem 'jsonapi-resources' # Resource generation / serialization
+
+# Assets
+gem "ember-cli-rails" # Ember frontend
+gem 'uglifier'
 
 group :development, :test do
   gem 'faker'
   gem 'pry'
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '~> 3.8'
+  gem 'rspec-rails', '~> 3.8.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
