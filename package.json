@@ -1,4 +1,6 @@
 {
-  
+  "engines": {
+    "npm": "6.4.1"
+  },
   "cacheDirectories": ["frontend/node_modules","node_modules"]
 }
