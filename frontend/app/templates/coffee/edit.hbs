@@ -1,23 +1,25 @@
 {{outlet}}
 
-<form {{action 'updateProduct' model on="submit"}}>
-  <div class="input-group">
-    <label>Name</label>
-    {{input value=model.name}}
-  </div>
+<div class="good-form">
+  <form {{action 'updateProduct' model on="submit"}}>
+    <div class="input-group">
+      <label>Name</label>
+      {{input value=model.name}}
+    </div>
 
-  <div class="input-group">
-    <label>Origin</label>
-    {{input value=model.origin}}
-  </div>
+    <div class="input-group">
+      <label>Origin</label>
+      {{input value=model.origin}}
+    </div>
 
-  <div class="input-group">
-    <label>Purpose</label>
-    {{input value=model.purpose}}
-  </div>
+    <div class="input-group">
+      <label>Purpose</label>
+      {{textarea rows=6 value=model.purpose}}
+    </div>
 
-  <div>
-    <button type="submit">Update Product</button>
-  </div>
+    <div>
+      <button type="submit">Update Product</button>
+    </div>
 
-</form>
+  </form>
+</div>

@@ -13,3 +13,28 @@
     width: 40%;
     display: inline-flex;
 }
+
+.good-form {
+    
+    .input-group {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1.5em;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 5px;
+    }
+    
+    textarea {
+        width: 100%;
+        font-size: 1.5em;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 5px;
+    }
+
+}
