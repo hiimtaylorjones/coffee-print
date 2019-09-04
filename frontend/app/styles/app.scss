@@ -1,27 +1,8 @@
 @import 'bulma';
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Allerta Stencil', sans-serif;
-}
-
-
-p, a {
-    font-size: 1.20em;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.5px;
-
-    b {
-        font-size: 1.21em;
-    }
-}
-
 .divider {
     width: 100%;
     border: 2px solid black;
-}
-
-.application-outlet-content {
-    margin: 10% 15%;
 }
 
 @import 'coffee';
