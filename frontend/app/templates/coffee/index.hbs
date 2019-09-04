@@ -18,18 +18,15 @@
   We've filled out the supply chains to the best extent possible. However,
   we're always iterating and updating on the process.
 </p>
+
 <div class="tile is-ancestor">
-  <div class="tile is-12">
-    {{#each model as |coffee|}}  
-      <div class="tile is-4">
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <h3>{{coffee.name}}</h3>
-            <h4>{{coffee.origin}}</h4>
-            <p>{{#link-to "coffee.show" coffee.id}}Read More{{/link-to}}</p>
-          </article>
-        </div>
+  {{#each model as |coffee|}}  
+    <div class="tile is-4 is-parent">
+      <div class="tile is-child box">
+        <h3>{{coffee.name}}</h3>
+        <h4>{{coffee.origin}}</h4>
+        <p>{{#link-to "coffee.show" coffee.id}}Read More{{/link-to}}</p>
       </div>
-    {{/each}}
-  </div>
+    </div>
+  {{/each}}
 </div>
